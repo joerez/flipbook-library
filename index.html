@@ -21,6 +21,9 @@ Happy flipping!
 
   <title>Flipbook Framework</title>
 
+  <!-- This script is just for my github buttons, please ignore. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
   <!--include before personal stylesheet-->
   <link rel="stylesheet" href="book.css">
 
@@ -39,7 +42,10 @@ Happy flipping!
     <div class="bookTop"></div>
 
     <!--this is the side of your book where you'll put a title, author, or anything else-->
-    <div class="bookSide">Book 3<br>The Latitude In<br>The Press<br><br><br><p>By: The Anonymous Benefactor</p></div>
+    <div class="bookSide">
+      <p>Flipbook Library</p>
+      <p>By: <a style="color: white; transition: all 1000ms;" href="www.joerezendes.com/">Joe Rezendes</a></p>
+    </div>
 
     <!--this is the side of the book that has pages-->
     <div class="bookSide2"></div>
@@ -52,36 +58,64 @@ Happy flipping!
 
     <!--this is the cover of your book. Put your title here along with anything else-->
     <div class="page cover">
-      Book 3<br>The Latitude In<br>The Press<br><br><br><p>By: The Anonymous Benefactor</p>
+      <h1>Flipbook Library</h1>
+      <p>By: <a class="author" href="www.joerezendes.com/">Joe Rezendes</a></p>
+      <!-- Place this tag where you want the button to render. -->
     </div>
 
     <!--display your book pages in descending order. New pages are added to the top here.
         It's important you give each page the page and pagecontent class, along with a pagenumber class-->
 
     <div class="page pagecontent fifthPage bookBack">
-      Page five
+      <a style="color: white;" href="https://github.com/joerez/flipbook-library">Or check out
+      <br>
+      the documentation
+      <br>
+      on GitHub!</a>
     </div>
 
 
     <div class="page pagecontent fourthPage">
-      Page four
+      Simply check out
+      <br>
+      the source code!
     </div>
 
 
     <div class="page pagecontent thirdPage">
-      Page three
+      Want to set one up
+      <br>
+      For yourself?
     </div>
 
     <div class="page pagecontent secondPage">
-      Page two
+      It's meant to be
+      <br>
+      easy to use and customize!
     </div>
 
     <div class="page pagecontent firstPage">
-
+      This is a simple
+      <br>
+      3D Flipbook!
     </div>
 
   </div><!--book-->
 
+  <style>
+    .belowbox {
+      position: absolute;
+      left: 0; right: 0; bottom: 2rem;
+      margin-left: auto; margin-right: auto;
+      width: 20rem;
+    }
+  </style>
+  <div class="belowbox">
+    <center>
+    <a class="github-button" href="https://github.com/joerez/flipbook-library" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star joerez/flipbook-library on GitHub">Star</a>
+    <a class="github-button" href="https://github.com/joerez" data-size="large" data-show-count="true" aria-label="Follow @joerez on GitHub">Follow @joerez</a>
+    <br><a href="https://github.com/joerez/flipbook-library" style="color: blue">Check out documentation</a>
+  </div>
 </div><!--bookContainer-->
 
 

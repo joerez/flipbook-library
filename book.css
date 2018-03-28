@@ -35,7 +35,7 @@ By default the book is displayed in the center of your bookContainer*/
   transition: all 1s;
   transform-style: preserve-3d;
   /*Here is your default book state, change as you wish*/
-  transform: rotateY(-25deg) rotateX(0deg) scale(1);
+  transform: rotateY(-35deg) rotateX(0deg) scale(1);
 
   /*uncomment this to spin your book around on page load.*/
   /*animation: rotate 10s infinite linear;*/
@@ -149,6 +149,7 @@ whatever you want.*/
   height: 400px;
   background: brown;
   position: absolute;
+  top: 0;
   color: white;
 }
 
@@ -185,27 +186,16 @@ whatever you want.*/
   text-align: center;
 }
 
-/*If you want to make a page special you can give it a background image like this*/
-.firstPage {
-  display: flex;
-  position: absolute;
-  transition: all 1s ease-in-out;
-  transform-origin: left;
-  transform: rotateY(0deg);
-  left: 0px;
-  z-index: 19;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: url('https://image.ibb.co/dpq4s7/Screen_Shot_2018_03_27_at_4_20_49_PM.png');
-  background-size: contain;
-}
 
 /*This turns your page over*/
 .turnOver {
   transform: rotateY(-180deg);
   box-shadow: 0 5px 20px rgba(0,0,0,1);
+}
+
+.author {
+  color: white;
+  transition: all 1000ms;
 }
 
 /*This is the default animation you can choose to set in the original book selector*/

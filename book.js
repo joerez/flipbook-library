@@ -30,6 +30,7 @@ $('.cover').on("click", function() {
    $('.cover').css('transform', 'rotateY(-180deg)');
    //this changes the color of the text to the same color of the page so it isn't visible.
    $('.cover').css("color", "brown");
+   $('.author').css("color", "brown");
    $(this).css('z-index', '20');
 })
 
@@ -58,8 +59,10 @@ $('.bookBack').on("click", function() {
 
   //show text again
   $('.cover').css("color", "white");
+  $('.author').css("color", "white");
+
   $('.book').addClass("hoveit");
-  
+
   //the new default state of the book.
-  $('.book').css("transform", "rotateY(25deg)")
+  $('.book').css("transform", "rotateY(33deg) rotateX(-30deg)")
 })
