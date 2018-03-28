@@ -15,7 +15,8 @@ Download book.css and put it in your documents ```head```.
 
 Download book.js and put it right before your documents closing ```body``` tag.
 ```
-...
+<body>
+  ...
   <script src="book.js"></script>
  </body>
 ```
