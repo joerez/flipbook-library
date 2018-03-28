@@ -131,3 +131,6 @@ In the CSS file, there are comments that show where you can change colors. You c
 <div class="page" style="background: ____;"></div>
 ```
 Inside the CSS File, you can also follow the comments that show you how you can change how your book is rotated. Please experiment as you wish.
+
+## Contributing
+If you'd like to make this library easier to use, or find bits of the documentation confusing, please open an issue or submit a pull request with a summary of the changes you've made.
