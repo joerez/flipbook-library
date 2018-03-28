@@ -18,7 +18,7 @@ Download book.js and put it right before your documents closing ```body``` tag.
 <body>
   ...
   <script src="book.js"></script>
- </body>
+</body>
 ```
 Feel free to also check out the comments in index.html, book.css, and book.js for further instructions.
 ## Setting up your book envirment 
