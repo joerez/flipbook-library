@@ -81,35 +81,35 @@ Underneath the closing ```div``` with the ```cover``` class, you'll create pages
         It's important you give each page the page and pagecontent class, along with a pagenumber class
     -->
 
-    <div class="page pagecontent fifthPage bookBack">
-      Page five
-    </div>
+      <div class="page pagecontent fifthPage bookBack">
+        Page five
+      </div>
 
 
-    <div class="page pagecontent fourthPage">
-      Page four
-    </div>
+      <div class="page pagecontent fourthPage">
+        Page four
+      </div>
 
 
-    <div class="page pagecontent thirdPage">
-      Page three
-    </div>
+      <div class="page pagecontent thirdPage">
+        Page three
+      </div>
 
-    <div class="page pagecontent secondPage">
-      Page two
-    </div>
+      <div class="page pagecontent secondPage">
+        Page two
+      </div>
 
-    <div class="page pagecontent firstPage">
-      Page one
-    </div>
-  </div><!--book-->
+      <div class="page pagecontent firstPage">
+        Page one
+      </div>
+    </div><!--book-->
   </div><!--bookContainer-->
 
 ```
 It's important to remember to give each page a unique class. It's reccomended you use ```firstPage```, ```secondPage```, etc. Each page also needs the ```page``` and ```pageContent``` class.
 ## Making pages flip
 Inside of book.js you'll need to call a function for every page you add. The first four are done for you inside.
-You'll do so by calling the ```newPage``` function and passing in your pages class name as the parameter.
+You'll do so by calling the ```newPage``` function and passing in your pages class name as the parameter. It starts on line ```51```
 ```
 //set up each new page here. Do not use the last page.
 newPage('.firstPage');
@@ -130,3 +130,4 @@ In the CSS file, there are comments that show where you can change colors. You c
 <!--as well as every individual page, or just overwrite in book.css (Reccomended)-->
 <div class="page" style="background: ____;"></div>
 ```
+Inside the CSS File, you can also follow the comments that show you how you can change how your book is rotated. Please experiment as you wish.
