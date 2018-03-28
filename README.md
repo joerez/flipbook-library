@@ -1,5 +1,5 @@
 # flipbook-library
-A solution for creating simple 3D flipbooks
+A solution for creating simple 3D flipbooks. I've looked all over the internet and there is no open-source flipbook library, so I thought I would create one myself. This is meant to simplify the process of creating a 3D flipbook.
 
 ## Installation
 - Setup NPM
