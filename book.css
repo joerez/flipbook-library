@@ -10,7 +10,7 @@
 
 
 
-/*This is your book world. Change the height and width and position as needed.
+/*This is your book world. Change the height, width, and position as needed.
 Please keep perspective at 2000px*/
 .bookContainer {
   position: absolute;
@@ -19,7 +19,7 @@ Please keep perspective at 2000px*/
   perspective: 2000px;
 }
 
-/*Here is book. You can play with the size of it, but you'll need to adjust your other values when you do.
+/*Here is the book. You can play with the size of it, but you'll need to adjust your other values when you do.
 By default the book is displayed in the center of your bookContainer*/
 .book {
   position: absolute;
