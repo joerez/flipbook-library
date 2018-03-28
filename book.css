@@ -1,0 +1,195 @@
+
+body {
+  perspective: 2000px;
+}
+
+.book {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 400px;
+  width: 300px;
+  /*background: brown;*/
+  perspective: 1400px;
+  border: solid 1px black;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  transform: rotateY(-25deg) rotateX(0deg) scale(1);
+  /*animation: rotate 10s infinite linear;*/
+}
+
+.hoveit:hover {
+  transform: rotateY(42deg) rotateX(-0deg) scale(1.0);
+}
+
+.bookTop {
+  /*content: "";*/
+  height: 110px;
+  width: 300px;
+  border: solid 1px black;
+  border-top: solid 1px black;
+  /* border-top-left-radius: 24%; */
+  position: absolute;
+  right: 0;
+  left: 0px;
+  top: -400px;
+  bottom: 0;
+  margin: auto;
+  background: repeating-linear-gradient(#000, #000 1px, #9198e5 1px, #9198e5 4px);
+  transform: rotateX(90deg) rotateY(0deg) translateY(-54px);
+  color: white;
+  border-right: none;
+    }
+
+    .bookBottom {
+      content: "";
+      height: 110px;
+      width: 300px;
+      border: solid 1px black;
+      border-top: solid 1px black;
+      /* border-top-left-radius: 24%; */
+      position: absolute;
+      right: 0;
+      left: 0px;
+      top: 400px;
+      bottom: 0;
+      margin: auto;
+      background: repeating-linear-gradient(#000, #000 1px, #9198e5 1px, #9198e5 4px);
+      transform: rotateX(90deg) rotateY(0deg) translateY(-54px);
+      color: white;
+      border-right: none;
+        }
+
+
+.bookSide {
+    content: "";
+    height: 397px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #AB4747;
+    transform: rotateY(-90deg) translateY(0px) translateX(-54px);
+    border: solid 3px black;
+    color: white;
+    text-align: center;
+    font-size: 90%;
+    transform-style: preserve-3d;
+  }
+
+  .bookSide2 {
+      content: "";
+      height: 400px;
+      width: 107px;
+      position: absolute;
+      right: 0;
+      left: 243px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: repeating-linear-gradient(90deg, #000, #000 1px, #9198e5 1px, #9198e5 4px);
+      transform: rotateY(90deg) translateX(54px);
+      border: solid 3px black;
+      /* border-top-left-radius: 5%; */
+      color: white;
+      text-align: center;
+      font-size: 90%;
+      transform-style: preserve-3d;
+      border-top: none;
+      border-bottom: none;
+    }
+
+
+.backBook {
+  position: absolute;
+  content: '';
+  height: 400px;
+  width: 300px;
+  margin: auto;
+  background: #AB4747;
+  transform: rotateY(180deg) translateZ(108px) translateX(0px) rotateX(0deg);
+  border: solid 3px black;
+  border-right: none;
+  text-align: center;
+  color: white;
+}
+
+.page {
+  width: 100%;
+  border: solid 1px black;
+  height: 400px;
+  background: brown;
+  position: absolute;
+  color: white;
+  /*backface-visibility: hidden;*/
+}
+
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 140%;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  transform-origin: left;
+  transform: rotateY(0deg);
+  left: 0px;
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 0px black;
+  border: solid 1px black;
+}
+
+.pagecontent {
+  display: flex;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  transform-origin: left;
+  transform: rotateY(0deg);
+  left: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.firstPage {
+  display: flex;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  transform-origin: left;
+  transform: rotateY(0deg);
+  left: 0px;
+  z-index: 19;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('https://image.ibb.co/dpq4s7/Screen_Shot_2018_03_27_at_4_20_49_PM.png');
+  background-size: contain;
+}
+
+.turnOver {
+  transform: rotateY(-180deg);
+  box-shadow: 0 5px 20px rgba(0,0,0,1);
+}
+
+
+@keyframes rotate {
+  0% { -webkit-transform:  rotateY(0) rotateX(0); }
+  100% { -webkit-transform:  rotateY(360deg) rotateX(360deg); }
+}
