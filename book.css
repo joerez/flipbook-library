@@ -1,4 +1,17 @@
+/*!
+ * Flipbook Library - http://joerezendes.com/flipbook-library
+ * Version - 1.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Github - https://github.com/joerez/flipbook-library
+ *
+ * Copyright (c) 2018 Joe Rezendes
+ */
 
+
+
+/*This is your book world. Change the height and width and position as needed.
+Please keep perspective at 2000px*/
 .bookContainer {
   position: absolute;
   height: 100%;
@@ -6,6 +19,8 @@
   perspective: 2000px;
 }
 
+/*Here is book. You can play with the size of it, but you'll need to adjust your other values when you do.
+By default the book is displayed in the center of your bookContainer*/
 .book {
   position: absolute;
   top: 0;
@@ -15,26 +30,29 @@
   margin: auto;
   height: 400px;
   width: 300px;
-  /*background: brown;*/
   perspective: 1400px;
   border: solid 1px black;
   transition: all 1s;
   transform-style: preserve-3d;
+  /*Here is your default book state, change as you wish*/
   transform: rotateY(-25deg) rotateX(0deg) scale(1);
+
+  /*uncomment this to spin your book around on page load.*/
   /*animation: rotate 10s infinite linear;*/
 }
 
+/*This is where you can change the books state on hover.*/
 .hoveit:hover {
   transform: rotateY(42deg) rotateX(-0deg) scale(1.0);
 }
 
+/*here is the top of your book. Feel free to change the #9198e5 value to
+whatever you want.*/
 .bookTop {
-  /*content: "";*/
   height: 110px;
   width: 300px;
   border: solid 1px black;
   border-top: solid 1px black;
-  /* border-top-left-radius: 24%; */
   position: absolute;
   right: 0;
   left: 0px;
@@ -47,26 +65,27 @@
   border-right: none;
     }
 
-    .bookBottom {
-      content: "";
-      height: 110px;
-      width: 300px;
-      border: solid 1px black;
-      border-top: solid 1px black;
-      /* border-top-left-radius: 24%; */
-      position: absolute;
-      right: 0;
-      left: 0px;
-      top: 400px;
-      bottom: 0;
-      margin: auto;
-      background: repeating-linear-gradient(#000, #000 1px, #9198e5 1px, #9198e5 4px);
-      transform: rotateX(90deg) rotateY(0deg) translateY(-54px);
-      color: white;
-      border-right: none;
-        }
+/*here is the bottom of your book. Feel free to change the #9198e5 value to
+whatever you want.*/
+.bookBottom {
+  content: "";
+  height: 110px;
+  width: 300px;
+  border: solid 1px black;
+  border-top: solid 1px black;
+  position: absolute;
+  right: 0;
+  left: 0px;
+  top: 400px;
+  bottom: 0;
+  margin: auto;
+  background: repeating-linear-gradient(#000, #000 1px, #9198e5 1px, #9198e5 4px);
+  transform: rotateX(90deg) rotateY(0deg) translateY(-54px);
+  color: white;
+  border-right: none;
+    }
 
-
+/*This is the side of your book that has your cover. Feel free to change the background color*/
 .bookSide {
     content: "";
     height: 397px;
@@ -86,29 +105,29 @@
     transform-style: preserve-3d;
   }
 
-  .bookSide2 {
-      content: "";
-      height: 400px;
-      width: 107px;
-      position: absolute;
-      right: 0;
-      left: 243px;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      background: repeating-linear-gradient(90deg, #000, #000 1px, #9198e5 1px, #9198e5 4px);
-      transform: rotateY(90deg) translateX(54px);
-      border: solid 3px black;
-      /* border-top-left-radius: 5%; */
-      color: white;
-      text-align: center;
-      font-size: 90%;
-      transform-style: preserve-3d;
-      border-top: none;
-      border-bottom: none;
-    }
+/*This is the side that looks like pages. Feel free to change the #9198e5 value*/
+.bookSide2 {
+  content: "";
+  height: 400px;
+  width: 107px;
+  position: absolute;
+  right: 0;
+  left: 243px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: repeating-linear-gradient(90deg, #000, #000 1px, #9198e5 1px, #9198e5 4px);
+  transform: rotateY(90deg) translateX(54px);
+  border: solid 3px black;
+  color: white;
+  text-align: center;
+  font-size: 90%;
+  transform-style: preserve-3d;
+  border-top: none;
+  border-bottom: none;
+}
 
-
+/*Here is the back of your book. Feel free to change the background color*/
 .backBook {
   position: absolute;
   content: '';
@@ -123,6 +142,7 @@
   color: white;
 }
 
+/*Here is what every page looks like. Set a new background color if you like*/
 .page {
   width: 100%;
   border: solid 1px black;
@@ -130,10 +150,9 @@
   background: brown;
   position: absolute;
   color: white;
-  /*backface-visibility: hidden;*/
 }
 
-
+/*Here is your cover. Feel free to change the flexbox values*/
 .cover {
   display: flex;
   flex-direction: column;
@@ -148,15 +167,11 @@
   transform: rotateY(0deg);
   left: 0px;
   z-index: 25;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   border: solid 0px black;
   border: solid 1px black;
 }
 
+/*Every page will look like this. Feel free to change flexbox values. By default everything is in the middle*/
 .pagecontent {
   display: flex;
   position: absolute;
@@ -170,6 +185,7 @@
   text-align: center;
 }
 
+/*If you want to make a page special you can give it a background image like this*/
 .firstPage {
   display: flex;
   position: absolute;
@@ -186,12 +202,13 @@
   background-size: contain;
 }
 
+/*This turns your page over*/
 .turnOver {
   transform: rotateY(-180deg);
   box-shadow: 0 5px 20px rgba(0,0,0,1);
 }
 
-
+/*This is the default animation you can choose to set in the original book selector*/
 @keyframes rotate {
   0% { -webkit-transform:  rotateY(0) rotateX(0); }
   100% { -webkit-transform:  rotateY(360deg) rotateX(360deg); }
