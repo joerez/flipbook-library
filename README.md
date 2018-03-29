@@ -2,9 +2,10 @@
 A solution for creating simple 3D flipbooks. I've looked all over the internet and there is no open-source flipbook library, so I thought I would create one myself. This is meant to simplify the process of creating a 3D flipbook.
 
 ## Installation
-- Setup NPM
-- Setup Bower
-
+To install via npm, simply do the following:
+```
+npm install flipbook-library --save
+```
 ## How to use
 Download book.css and put it in your documents ```head```.
 ```
@@ -22,7 +23,7 @@ Download book.js and put it right before your documents closing ```body``` tag. 
 </body>
 ```
 Feel free to also check out the comments in index.html, book.css, and book.js for further instructions.
-## Setting up your book envirment 
+## Setting up your book envirment
 Setting up an envirement for your book is easy. Simply create a ```div``` and give it the following class
 
 ```
@@ -75,7 +76,7 @@ Underneath the closing ```div``` with the ```cover``` class, you'll create pages
 
 ```
     </div><!--cover-->
-    
+
     <!--
         display your book pages in descending order. New pages are added to the top here.
         It's important you give each page the page and pagecontent class, along with a pagenumber class
@@ -116,7 +117,7 @@ newPage('.firstPage');
 newPage('.secondPage');
 //and so on until the second to last page.
 ```
-Your last page needs the ```backbook``` class. When this class is clicked it closes the book. 
+Your last page needs the ```backbook``` class. When this class is clicked it closes the book.
 You will need to edit it's function for every page you add as well if you'd like it to close dynamically. Otherwise, just use the ```page``` class instead of the individual page.
 ```
   $('.firstPage').css('transform', 'rotateY(0deg)');
