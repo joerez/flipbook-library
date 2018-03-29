@@ -111,7 +111,7 @@ Underneath the closing ```div``` with the ```cover``` class, you'll create pages
   </div><!--bookContainer-->
 
 ```
-It's important to remember to give each page a unique class. It's reccomended you use ```firstPage```, ```secondPage```, etc. Each page also needs the ```page``` and ```pageContent``` class.
+It's important to remember to give each page a unique class. It's reccomended you use ```firstPage```, ```secondPage```, etc. Each page also needs the ```page``` and ```pageContent``` class. Your last page needs the ```bookBack``` class.
 ## Making pages flip
 Inside of book.js you'll need to call a function for every page you add. The first four are done for you inside.
 You'll do so by calling the ```newPage``` function and passing in your pages class name as the parameter. It starts on line ```51```
